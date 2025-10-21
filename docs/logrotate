@@ -1,0 +1,14 @@
+/var/log/nvsa.log
+/var/log/nvsb.log
+{
+        maxsize 1k
+        hourly
+        rotate 3
+        #size 1k
+        missingok
+        notifempty
+        postrotate
+        #       /usr/bin/systemctl reload syslog-ng >/dev/null 2>&1 || true
+                service syslog-ng restart >/dev/null 2>&1 || true
+        endscript
+}
