@@ -1,6 +1,5 @@
 ### C++ template
 # Prerequisites
-*.d
 .idea/
 # Compiled Object files
 *.slo

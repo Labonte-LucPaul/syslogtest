@@ -1,0 +1,2 @@
+# Force a rotation every specified time.
+*/1 * * * * /usr/sbin/logrotate -f /etc/logrotate.d/syslog-ng >> /var/log/syslog 2>&1
