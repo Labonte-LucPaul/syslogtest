@@ -12,6 +12,12 @@
 *.gch
 *.pch
 
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -54,3 +60,5 @@ CMakeUserPresets.json
 *.iml
 out
 gen
+# debug information files
+*.dwo
