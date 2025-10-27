@@ -31,8 +31,8 @@ void setLogLevel() {
 }
 
 void restartSyslogNg() {
-    const int result = std::system("syslog-ng-ctl reload > reload.txt");
-    std::cout << std::fstream("reload.txt").rdbuf();
+    const int result = std::system("/usr/sbin/syslog-ng-ctl reload > /tmp/reload.txt");
+    std::cout << std::fstream("/tmp/reload.txt").rdbuf();
     if (result == 0) {
         std::cout << "Restarted syslog-ng successful\n";
     } else {
